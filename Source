@@ -66,15 +66,6 @@ library SafeMath {
       _;
     }
   
-    /**
-     * @dev Modifier to make a function callable only when the contract is paused.
-     */
-    modifier whenPaused() {
-      require(paused);
-      _;
-    }
-  
-    
     
      //Pause release
     function unpause() onlyOwner whenPaused public {
