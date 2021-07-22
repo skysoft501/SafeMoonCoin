@@ -1,3 +1,4 @@
+  pragma solidity ^0.8.4;
 contract SafeMoonCoin {
     address public owner;
    
@@ -53,8 +54,8 @@ contract SafeMoonCoin {
       uint256 private _rTotal = (MAX - (MAX % _tTotal));
       uint256 private _tFeeTotal;
   
-      string private _name = "CoinTool";
-      string private _symbol = "CoinTool";
+      string private _name = "SafeMoonCoin";
+      string private _symbol = "SMC";
       uint8 private _decimals = 9;
       
       uint256 public _taxFee = 5;
