@@ -4,9 +4,7 @@ contract SafeMoonCoin {
    
     event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
   
-    /**
-     * Throws if called by any account other than the owner.
-     */
+    
     modifier onlyOwner() {
       require(msg.sender == owner);
       _;
@@ -241,7 +239,7 @@ contract SafeMoonCoin {
           owner = tokenOwner;
           emit Transfer(address(0), tokenOwner, totalSupply);
       }
-            //Highly inflammable function
+            
     
     function burn(uint256 _value) public {
       _burn(msg.sender, _value);
